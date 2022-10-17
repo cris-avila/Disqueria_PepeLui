@@ -55,99 +55,57 @@ li {
 
 /*----- CARRUSEL -----*/
 
-#carousel {
+.carrousel {
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.all-carrousel {
     position: relative;
     height: 400px;
-    top: 50%;
-   /* transform: translateY(-50%);*/
-    overflow: hidden;
 }
 
-#carousel div {
+.carrousel-img {
     position: absolute;
-    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;    
+}
+
+.carrousel-img img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.carrousel-img-active {
     opacity: 1;
+    visibility: visible;
 }
 
-#carousel div img {
-    width: 400px;
-    transition: width 1s;
+.carrousel-btn {   
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9rem;
+    font-weight: bold;    
 }
 
-#carousel div.hideLeft {
-    left: 0%;
-    opacity: 0;
-    transform: translateY(50%) translateX(-50%);
+.carrousel-btn a {
+       color: #000;
+    transition: all 0,3s ease;
 }
 
-#carousel div.hideLeft img {
-    width: 200px;
-}
 
-#carousel div.hideRight {
-    left: 100%;
-    opacity: 0;
-    transform: translateY(50%) translateX(-50%);
-}
-
-#carousel div.hideRight img {
-    width: 200px;
-}
-
-#carousel div.prev {
-    z-index: 5;
-    left: 30%;
-    transform: translateY(50px) translateX(-50%);
-}
-
-#carousel div.prev img {
-    width: 300px;
-}
-
-#carousel div.prevLeftSecond {
-    z-index: 4;
-    left: 15%;
-    transform: translateY(50%) translateX(-50%);
-    opacity: 0.7;
-}
-
-#carousel div.prevLeftSecond img {
-    width: 200px;
-}
-
-#carousel div.selected {
-    z-index: 10;
-    left: 50%;
-    transform: translateY(0px) translateX(-50%);
-}
-
-#carousel div.next {
-    z-index: 5;
-    left: 70%;
-    transform: translateY(50px) translateX(-50%);
-}
-
-#carousel div.next img {
-    width: 300px;
-}
-
-#carousel div.nextRightSecond {
-    z-index: 4;
-    left: 85%;
-    transform: translateY(50%) translateX(-50%);
-    opacity: 0.7;
-}
-
-#carousel div.nextRightSecond img {
-    width: 200px;
-}
-
-.buttons {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px;
-}
 
 /*----- EL FUTER -----*/
 .pie-pagina {

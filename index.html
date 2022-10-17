@@ -44,46 +44,36 @@
     <!-- End Nav Bar -->
 
     <!-- Carrusel -->
-    
-    <section>
+
+    <section class="novedades">
 
         <H1>ACA VOY A PONER UN CARRUSEL</H1>
 
-        <div id="carousel">
+        <div class="carrousel">
 
-            <div class="hideLeft">
-                <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+            <div class="all-carrousel">
+                <div class="carrousel-img-active">
+                    <img src="./assets/img/añosluz.jpg" alt="añosluz">
+                </div>
+                <div class="carrousel-img">
+                    <img src="./assets/img/norah.jpg" alt="norah">
+                </div>
+                <div class="carrousel-img">
+                    <img src="./assets/img/Revolver.jpg" alt="Revolver">
+                </div>
+                <div class="carrousel-img">
+                    <img src="./assets/img/sexpis.jpg" alt="sexpistols">
+                </div>
+                <div class="carrousel-img">
+                    <img src="./assets/img/Spinetta.jpg" alt="Spinetta">
+                </div>
             </div>
 
-            <div class="prevLeftSecond">
-                <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-            </div>
-
-            <div class="prev">
-                <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-            </div>
-
-            <div class="selected">
-                <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-            </div>
-
-            <div class="next">
-                <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-            </div>
-
-            <div class="nextRightSecond">
-                <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-            </div>
-
-            <div class="hideRight">
-                <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-            </div>
-
-        </div>
-
-        <div class="buttons">
-            <button id="prev">Prev</button>
-            <button id="next">Next</button>
+            <div class="carrousel-btn">
+                <a class="prev" href="#">&laquo;</a>
+                <a class="next" href="#">&raquo;</a>
+            </div>          
+           
         </div>
 
     </section>
@@ -92,13 +82,7 @@
 
 
 
-
-
-
-
-
-
-
+    
 
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -125,16 +109,13 @@
         <div class="grupo-2">
             <small>&copy; 2022 <b>Pepe Lui</b> - Todos los Derechos Reservados, sino TABLA.</small>
         </div>
-
     </footer>
-
-
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/carrousel.js"></script>
 
 </body>
 
