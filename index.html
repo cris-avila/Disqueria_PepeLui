@@ -23,21 +23,23 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="./assets/css/home.css">
 
+
+
 </head>
 
 <body>
     <main>
         <header>
-            <!-- Star Nav Bar -->
-            <nav class="navbar">
-                <div class="logo">Pepe-Lui</div>
-                <div class="menu">
-                    <li><a href="" class="nav-links">Nosotros</a></li>
-                    <li><a href="./discos.html" class="nav-links">Discos</a></li>
-                    <li><a href="" class="nav-links">Contactos</a></li>
+            <div class="header">
 
+                <a href="#" class="logo">Pepe-Lui</a>
+                <div class="menu-derecha">
+                    <a href="">Nosotros</a>
+                    <a href="./discos.html" class="nav-links">Discos</a>
+                    <a href="">Contactos</a>
                 </div>
-            </nav>
+            </div>
+
 
         </header>
     </main>
@@ -45,76 +47,111 @@
 
     <!-- Carrusel -->
 
-    <section class="novedades">
+    <section class="Carrusel">
 
-        <H1>ACA VOY A PONER UN CARRUSEL</H1>
 
-        <div class="carrousel">
+        <!-- Carrusel -->
+        <div class="carrusel-contenedor">
 
-            <div class="all-carrousel">
-                <div class="carrousel-img-active">
-                    <img src="./assets/img/añosluz.jpg" alt="añosluz">
-                </div>
-                <div class="carrousel-img">
-                    <img src="./assets/img/norah.jpg" alt="norah">
-                </div>
-                <div class="carrousel-img">
-                    <img src="./assets/img/Revolver.jpg" alt="Revolver">
-                </div>
-                <div class="carrousel-img">
-                    <img src="./assets/img/sexpis.jpg" alt="sexpistols">
-                </div>
-                <div class="carrousel-img">
-                    <img src="./assets/img/Spinetta.jpg" alt="Spinetta">
-                </div>
+            <!-- Imágenes y titulos de slide -->
+            <div class="mySlides fade">
+
+                <img src="./assets/img/local2.jpeg" style="width: 100%;">
+                <div class="text">Un espacio para disfrutar</div>
             </div>
 
-            <div class="carrousel-btn">
-                <a class="prev" href="#">&laquo;</a>
-                <a class="next" href="#">&raquo;</a>
-            </div>          
-           
-        </div>
+            <div class="mySlides fade">
 
+                <img src="./assets/img/local.jpg" style="width: 100%">
+                <div class="text">La colección más grande de CABA</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="./assets/img/discoLongPlay.jpg" style="width: 100%">
+                <div class="text">Especialistas en Vinilos</div>
+            </div>
+
+            <!-- Buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- Circulos para pasar Slides-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section class="Ranking">
+        <div class="container fluid ranking">
+            <h2 class="ranking-titulo">RANKING VOTOS</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Puesto</th>
+                        <th scope="col">Año</th>
+                        <th scope="col">Usuarix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Bocanada</td>
+                        <td>1999</td>
+                        <td>@juli</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Revolver</td>
+                        <td>1966</td>
+                        <td>@elsubmarino</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Never Mind The Bollocks</td>
+                        <td>1977</td>
+                        <td>@fkl</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
 
-
-
-
-    
-
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <div class="logo">Pepe-Lui</div>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>Tenemos muchos discos copados para vender</p>
-                <p>Somos buena onda</p>
-            </div>
-            <div class="box">
-                <h2>SEGUINOS EN:</h2>
-                <div class="red-social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube"></a>
+    <!-- Footer-->
+    <section class="Footer">
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <a href="#" class="logo">Pepe-Lui</a>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Tenemos muchos discos copados para vender</p>
+                    <p>Somos buena onda</p>
+                </div>
+                <div class="box">
+                    <h2>SEGUINOS EN:</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="grupo-2">
-            <small>&copy; 2022 <b>Pepe Lui</b> - Todos los Derechos Reservados, sino TABLA.</small>
-        </div>
-    </footer>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>Pepe Lui</b> - Todos los Derechos Reservados, sino TABLA.</small>
+            </div>
+        </footer>
+    </section>
+    <!-- JavaScript-->
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
     <script src="./js/carrousel.js"></script>
 
 </body>
